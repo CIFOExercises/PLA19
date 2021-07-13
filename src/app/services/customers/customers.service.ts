@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Customer } from 'src/app/models/Customer';
+import { Customer } from 'src/app/models/customer.model';
 
 @Injectable({
   providedIn: 'root',
@@ -45,6 +45,6 @@ export class CustomersService {
   }
 
   getCustomer(id: number) {
-    return this.customers.find(q => q.id===id)
+    return this.customers.find((q) => q.id === id);
   }
 }
