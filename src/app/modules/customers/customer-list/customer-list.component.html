@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Listado de clientes</h1>
+  <hr>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Direccion</th>
+    </tr>
+    <tr *ngFor="let customer of customers">
+      <td>{{customer.id}}</td>
+      <td><a routerLink="../detallecliente/{{customer.id}}">{{customer.nom}}</a></td>
+      <td>{{customer.dir}}</td>
+    </tr>
+  </table>
+</div>
