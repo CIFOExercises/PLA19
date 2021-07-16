@@ -18,7 +18,7 @@ const routes: Routes = [
     children: [
       { path: 'listaclientes', component: CustomerListComponent },
       { path: 'detallecliente/:id', component: CustomerDataComponent },
-      { path: '**', redirectTo: 'listaclientes', pathMatch: 'full' },
+      { path: '**', redirectTo: '', pathMatch: 'full' },
     ],
   },
   { path: 'listaproveedores', component: SupplierListComponent },
